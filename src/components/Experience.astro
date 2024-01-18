@@ -1,53 +1,72 @@
 <section id="experience">
-  <h1>Experiencia</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora porro,
-    doloremque quod labore velit optio. Quisquam illo dolorum, quos quibusdam ad
-    praesentium qui fuga. Nisi cumque voluptatibus cum iste minus. Lorem ipsum
-    dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam quos,
-    molestiae natus aliquam accusantium, omnis distinctio eaque reprehenderit
-    vero, mollitia magnam recusandae maiores. Quo non nobis ullam odio
-    necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Esse obcaecati illo adipisci dignissimos quisquam vel, quia animi reiciendis
-    veritatis laborum in, laboriosam minima odit porro iure accusantium nihil
-    necessitatibus ex.
-  </p><p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora porro,
-    doloremque quod labore velit optio. Quisquam illo dolorum, quos quibusdam ad
-    praesentium qui fuga. Nisi cumque voluptatibus cum iste minus. Lorem ipsum
-    dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam quos,
-    molestiae natus aliquam accusantium, omnis distinctio eaque reprehenderit
-    vero, mollitia magnam recusandae maiores. Quo non nobis ullam odio
-    necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Esse obcaecati illo adipisci dignissimos quisquam vel, quia animi reiciendis
-    veritatis laborum in, laboriosam minima odit porro iure accusantium nihil
-    necessitatibus ex.
-  </p><p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora porro,
-    doloremque quod labore velit optio. Quisquam illo dolorum, quos quibusdam ad
-    praesentium qui fuga. Nisi cumque voluptatibus cum iste minus. Lorem ipsum
-    dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam quos,
-    molestiae natus aliquam accusantium, omnis distinctio eaque reprehenderit
-    vero, mollitia magnam recusandae maiores. Quo non nobis ullam odio
-    necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Esse obcaecati illo adipisci dignissimos quisquam vel, quia animi reiciendis
-    veritatis laborum in, laboriosam minima odit porro iure accusantium nihil
-    necessitatibus ex.
-  </p><p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora porro,
-    doloremque quod labore velit optio. Quisquam illo dolorum, quos quibusdam ad
-    praesentium qui fuga. Nisi cumque voluptatibus cum iste minus. Lorem ipsum
-    dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam quos,
-    molestiae natus aliquam accusantium, omnis distinctio eaque reprehenderit
-    vero, mollitia magnam recusandae maiores. Quo non nobis ullam odio
-    necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Esse obcaecati illo adipisci dignissimos quisquam vel, quia animi reiciendis
-    veritatis laborum in, laboriosam minima odit porro iure accusantium nihil
-    necessitatibus ex.
-  </p>
+  <div class="timeline">
+    <div class="outer">
+      <div class="card">
+        <div class="info">
+          <h4 class="date">Title 1</h4>
+          <h2>Front-end Web Developer</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed atLorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed atLorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed atLorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed atLorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed at.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <style>
+  h2,h4 {
+    padding: 0;
+    margin: 0;
+  }
   section {
-    padding-top: 80px;
+    padding-top: 100px;
+  }
+  /* Timeline Container */
+  .timeline {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 1px solid green;
+  }
+
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: white;
+    max-width: 100dvh;
+  }
+
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Title of the card */
+  .date {
+    color: orangered;
+    position: relative;
+  }
+
+  /* Timeline dot  */
+  .date::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -41px;
+    border: 10px solid black;
   }
 </style>
