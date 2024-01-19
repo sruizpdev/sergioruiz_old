@@ -1,8 +1,49 @@
 <section id="aboutme">
   <h1>Sobre mi</h1>
-  <p>¡Hola! Soy Sergio, un apasionado desarrollador web con más de 3 años de experiencia creando soluciones digitales innovadoras. Mi enfoque se centra en la excelencia técnica y la creación de experiencias online excepcionales.</p>
-</section><style>
+  <div class="container">
+    <div class="banner">
+      <img src="yo.jpg" alt="" />
+    </div>
+  </div>
+</section>
+
+<style>
   section {
     padding-top: 100px;
+  }
+  .container {
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    height: 400px;
+    background-color: white;
+    overflow: hidden;
+  }
+  .banner {
+    background-image: url(code.jpg);
+    height: 150px;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    z-index: 200px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid var(--gray);
+  }
+  h1 {
+    margin: 10px 0px;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 </style>

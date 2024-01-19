@@ -1,72 +1,166 @@
+---
+
+---
+
 <section id="experience">
-  <div class="timeline">
-    <div class="outer">
-      <div class="card">
-        <div class="info">
-          <h4 class="date">Title 1</h4>
-          <h2>Front-end Web Developer</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed atLorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed atLorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed atLorem ipsum dolor
-            sit amet, consectetur adipiscing elit, sed atLorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed at.
-          </p>
-        </div>
+  <h1>Experiencia</h1>
+  <div class="container">
+    <div class="card">
+      <div class="card-logo">
+        <img src="cognizant.webp" alt="" />
+      </div>
+      <div class="card-data">
+        <h3 class="title">Programador Web Front-end</h3>
+        <p class="company-name">Cognizant</p>
+        <p class="date">Diciembre 2021 - Actualidad</p>
+        <p class="work-location">Remoto</p>
+        <p class="city">Cracovia - Polonia</p>
+        <p class="description">
+          Desarrollo y mantenimiento de aplicaciones web.
+        </p>
+        <p class="technologies">
+          <span>Tecnologías:</span> Angular, HTML, CSS, JavaScript, TypeScript, Git,
+          PWA
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-logo">
+        <img src="hcl.png" alt="" />
+      </div>
+      <div class="card-data">
+        <h3 class="title">Programador Web Front-end</h3>
+        <p class="company-name">HCL</p>
+        <p class="date">Octubre 2020 - Noviembr 2021</p>
+        <p class="work-location">Remoto</p>
+        <p class="city">Cracovia - Polonia</p>
+        <p class="description">
+          Desarrollo y mantenimiento de aplicaciones web.
+        </p>
+        <p class="technologies">
+          <span>Tecnologías:</span> Angular, HTML, CSS, JavaScript, TypeScript, Git,
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-logo">
+        <img src="alkimii.png" alt="" />
+      </div>
+      <div class="card-data">
+        <h3 class="title">Programador Aplicaciones Móviles</h3>
+        <p class="company-name">Alkimii</p>
+        <p class="date">Febrero 2020 - Mayo 2020</p>
+        <p class="work-location">Remoto</p>
+        <p class="city">Málaga - España</p>
+        <p class="description">
+          Desarrollo y mantenimiento de la aplicación movil de la compañia.
+        </p>
+        <p class="technologies">
+          <span>Tecnologías:</span> NativeScript, Vue, JavaScript, Git.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-logo">
+        <img src="accenture.png" alt="" />
+      </div>
+      <div class="card-data">
+        <h3 class="title">Programador Web Front-end</h3>
+        <p class="company-name">Accenture</p>
+        <p class="date">Marzo 2019 - Febrero 2020</p>
+        <p class="work-location">Presencial</p>
+        <p class="city">Málaga - España</p>
+        <p class="description">
+          Desarrollo y mantenimiento de aplicaciones web.
+        </p>
+        <p class="technologies">
+          <span>Tecnologías:</span> Angular, HTML, CSS, JavaScript, TypeScript, Git,
+          PWA
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-logo">
+        <img src="comdata.webp" alt="" />
+      </div>
+      <div class="card-data">
+        <h3 class="title">Operador de Redes</h3>
+        <p class="company-name">Condata</p>
+        <p class="date">Marzo 2008 - Marzo 2019</p>
+        <p class="work-location">Presencial</p>
+        <p class="city">Ronda - Málaga</p>
+        <p class="description">
+          Administració y configuración de redes para Unicaja.
+        </p>
+        <p class="technologies">
+          <span>Tecnologías:</span> Angular, HTML, CSS, JavaScript, TypeScript, Git,
+          PWA
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-logo">
+        <img src="aisat.png" alt="" />
+      </div>
+      <div class="card-data">
+        <h3 class="title">Programador web Full-Stack</h3>
+        <p class="company-name">Accenture</p>
+        <p class="date">Octubre 2005 - Marzo 2008</p>
+        <p class="work-location">Presencial</p>
+        <p class="city">Málaga - España</p>
+        <p class="description">
+          Desarrollo y mantenimiento de aplicaciones web.
+        </p>
+        <p class="technologies">
+          <span>Tecnologías:</span> HTML, CSS, JavaScript, PHP, Apache, MySQL
+        </p>
       </div>
     </div>
   </div>
 </section>
+
 <style>
-  h2,h4 {
-    padding: 0;
-    margin: 0;
-  }
   section {
     padding-top: 100px;
   }
-  /* Timeline Container */
-  .timeline {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-  }
-
-  /* Outer Layer with the timeline border */
-  .outer {
-    border-left: 1px solid green;
-  }
-
-  /* Card container */
-  .card {
-    position: relative;
-    margin: 0 0 20px 20px;
+  .container {
+    border: 1px solid var(--gray);
+    border-radius: 10px;
     padding: 10px;
-    background: white;
-    max-width: 100dvh;
+    background-color: white;
   }
-
-  /* Information about the timeline */
-  .info {
+  .card {
     display: flex;
-    flex-direction: column;
+    border-bottom: 1px solid var(--gray);
+    
   }
-
-  /* Title of the card */
-  .date {
-    color: orangered;
-    position: relative;
+  .card:last-child {
+    display: flex;
+    border-bottom: none;
   }
-
-  /* Timeline dot  */
-  .date::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 999px;
-    left: -41px;
-    border: 10px solid black;
+  .card-logo {
+    flex: 1;
+    padding: 10px;
+  }
+  .card-data {
+    flex: 6;
+    padding: 10px;
+  }
+  img {
+    width: 100px;
+  }
+  h1{
+    margin:10px 0px;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 </style>

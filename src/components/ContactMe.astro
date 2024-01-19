@@ -1,11 +1,50 @@
 <section id="contactme">
   <h1>Contactame</h1>
- <p>Programador JavaScript con mas de años de experiencia desarrollando aplicaciones interactivas y de calidad para diferentes clientes.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore, non, sint facilis iure molestias reprehenderit itaque quas dolorum perferendis repudiandae consectetur iusto earum consequuntur quis id officia commodi natus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore, non, sint facilis iure molestias reprehenderit itaque quas dolorum perferendis repudiandae consectetur iusto earum consequuntur quis id officia commodi natus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore, non, sint facilis iure molestias reprehenderit itaque quas dolorum perferendis repudiandae consectetur iusto earum consequuntur quis id officia commodi natus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore, non, sint facilis iure molestias reprehenderit itaque quas dolorum perferendis repudiandae consectetur iusto earum consequuntur quis id officia commodi natus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore, non, sint facilis iure molestias reprehenderit itaque quas dolorum perferendis repudiandae consectetur iusto earum consequuntur quis id officia commodi natus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore, non, sint facilis iure molestias reprehenderit itaque quas dolorum perferendis repudiandae consectetur iusto earum consequuntur quis id officia commodi natus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore, non, sint facilis iure molestias reprehenderit itaque quas dolorum perferendis repudiandae consectetur iusto earum consequuntur quis id officia commodi natus.</p>
+  <div class="container">
+    <form action="">
+      <label for="name">Tu nombre</label>
+      <input type="text" name="name" id="name" />
+      <label for="email">Tu email</label>
+      <input type="email" name="email" id="email" />
+      <label for="msg">Mensaje</label>
+      <textarea name="msg" id="msg" cols="30" rows="4"></textarea>
+
+      <input type="submit" name="submit" id="submit" />
+    </form>
+  </div>
 </section>
 <style>
-    section {
-      padding-top: 100px;
-      height: 100dvh
-    }
-    
-  </style>
+  section {
+    padding-top: 100px;
+    height: 100dvh;
+  }
+
+  .container {
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    height: 400px;
+    background-color: white;
+    overflow: hidden;
+    padding: 10px;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  textarea {
+    resize: none;  
+  }
+</style>

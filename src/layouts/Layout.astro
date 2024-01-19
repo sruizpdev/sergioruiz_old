@@ -26,7 +26,6 @@ const { title } = Astro.props;
   }
   * {
     min-width: 0;
-    font: inherit;
   }
   *,
   *::before,
@@ -58,10 +57,11 @@ const { title } = Astro.props;
   html {
     font-family: system-ui, sans-serif;
     scroll-behavior: smooth;
+	background-color: var(--background);
   }
   :root {
-  --primary-color: #fff; /* try #212121 also for dark mode */
-  --background-color: #212121;
-  
-}
+    
+    --background: #f4f2ee;
+	--gray:#dfdeda;
+  }
 </style>

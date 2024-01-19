@@ -12,47 +12,33 @@
   <nav>
     <a href="#aboutme">Sobre mi</a>
     <a href="#experience">Experiencia</a>
+    <a href="#education">Educación</a>
     <a href="#projects">Proyectos</a>
     <a href="#contactme">Contacto</a>
   </nav>
-  <div class="transparent"></div>
 </div>
 
 <style>
   .menu {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     height: 50px;
-    margin: 0 auto;
+    width: 100dvw;
+    background-color: white;
     z-index: 1000;
+    border-bottom: 1px solid var(--gray);
   }
   nav {
-    background: white;
+    margin: 0 auto;
     display: flex;
     gap: 30px;
-    width: 100%;
     max-width: 740px;
-justify-content: center;
-    padding: 20px 10px 20px 10px;
+    padding: 10px 0px;
   }
-  .transparent {
-    
-    min-height: 50px;
-    max-width: 720px;
-    width: 100%;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 0.3)
-    );
-   z-index: 999;
-  }
+
   a {
     text-decoration: none;
     cursor: pointer;
